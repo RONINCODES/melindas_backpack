@@ -58,7 +58,7 @@ class BackpackTest < MiniTest::Test
       refute(backpack.items.include?('gym shoes'))
     end
   end
-  
+
 
 
   ##### TESTS ABOUT PRINTING THE LIST #####
@@ -72,7 +72,7 @@ Day: monday, Weather: sunny
 - shirt
 - gym shoes
 - packed lunch"
-    assert_equal(backpack.my_func, expected)
+    assert_equal(backpack.summary_of_packing_list, expected)
   end
 
 end
