@@ -16,19 +16,25 @@ class Backpack
 
     # Ensure appropriate clothing is added to backpack
     pack_essential_clothing
+
+
     if current_weather == 'rainy'
       @items << 'umbrella'
     elsif current_weather == 'cold'
-      @items << 'jacket'
+       @items << 'jacket'
     else
     end
 
+
     # Ensure gym shoes are added to backpack if it's a gym day
-    if day_of_week == 'monday' || day_of_week == 'thursday'
-      @items << 'gym shoes'
-    end
+
+      if day_of_week == 'tuesday' || day_of_week == 'thursday'
+        @items << 'gym shoes'
+      end
+
 
     # Bring a packed lunch on all weekdays
+
     if day_of_week != 'saturday' && day_of_week != 'sunday'
       @items << 'packed lunch'
     elsif false
